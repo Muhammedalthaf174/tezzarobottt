@@ -74,14 +74,26 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Zaira*
-`I'm here to help you to make your group managment task easier! TAP` *Commands* `Use buttons given below to know more about me.` 
+────「 Tezza Robot 」────
+*Hᴇʟʟᴏ {} * [!]({})
+✪ *I'ᴍ ᴘᴏᴡᴇʀғᴜʟ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 🔥*
+✪ *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
+─────────────────────
+I have lots of handy features such as:
+‣ Warning system
+‣ Artificial intelligence
+‣ Flood control system
+‣ Note keeping system
+‣ Filters keeping system
+‣ Approvals and much more.
+───────────────────────
+➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ADD ME", url="t.me/ZairaRobot?startgroup=true"),
+            text="ADD ME", url="t.me/Tezza_Robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="Masha_"),
@@ -91,7 +103,7 @@ buttons = [
         InlineKeyboardButton(
             text="💾 DEV", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/magiclmush"
+            text="👥 SUPPORT", url="https://t.me/tezzasupportgroup"
         ),
     ],
 ]
@@ -211,12 +223,11 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
+            "ʜᴇʟʟᴏ! ɪ'ᴍ ᴀʟɪᴠᴇ".format(
+                
             ),
             parse_mode=ParseMode.HTML,
         )
-
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
@@ -346,16 +357,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Zaira*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Tezza*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
                  ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Zaira's licensed under the GNU General Public License v3.0_
-                 Here is the [SUPPORT](https://t.me/magiclmush).
-                 If you have any question about Zaira, let us know at @magicalmush.""",
+                 \n_Tezza's licensed under the GNU General Public License v3.0_
+                 Here is the [SUPPORT](https://t.me/tezzasupportgroup).
+                 If you have any question about Zaira, let us know at @tezzasupprtgroup.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -381,8 +392,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Zaira* THIS BOT CURRENTLY A CLOSED SOURCE CONATCT DEV FOR REPO
-                 \nHere is the [DEV](https://t.me/psykd) .""",
+            text=""" Hi..🤗 I'm *Tezza* THIS BOT CURRENTLY A CLOSED SOURCE CONATCT DEV FOR REPO
+                 \nHere is the [DEV](https://t.me/Althafser) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -677,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😌")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
