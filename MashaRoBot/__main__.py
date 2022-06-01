@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ────「 Tezza Robot 」────
 *Hᴇʟʟᴏ ɪ'ᴍ ᴛᴇᴢᴢᴀ*   
-✪ *I'ᴍ ᴘᴏᴡᴇʀғᴜʟ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ [🔥](https://telegra.ph/file/a8cc05eb6490cf23a57aa.jpg)*
+✪ *I'ᴍ ᴘᴏᴡᴇʀғᴜʟ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 🔥
 ✪ *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ─────────────────────
 I have lots of handy features such as:
@@ -85,7 +85,7 @@ I have lots of handy features such as:
 ‣ Flood control system
 ‣ Note keeping system
 ‣ Filters keeping system
-‣ Approvals and much more.
+‣ Approvals and much more[.](https://telegra.ph/file/a8cc05eb6490cf23a57aa.jpg)
 ───────────────────────
 ➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs
 """
