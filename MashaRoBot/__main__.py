@@ -85,7 +85,7 @@ I have lots of handy features such as:
 ‣ Flood control system
 ‣ Note keeping system
 ‣ Filters keeping system
-‣ Approvals and much more[.](https://telegra.ph/file/a8cc05eb6490cf23a57aa.jpg)
+‣ Approvals and much more.
 ───────────────────────
 ➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs
 """
