@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from MashaRoBot.pyrogramee.pluginshelper import admins_only, get_text
+from MashaRoBot.telethn.pluginshelper import admins_only, get_text
 from MashaRoBot import pbot
 
 
