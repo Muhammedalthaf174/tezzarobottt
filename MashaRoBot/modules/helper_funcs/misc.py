@@ -1,18 +1,9 @@
 from typing import Dict, List
-import typing
-from uuid import uuid4
+
 from MashaRoBot import NO_LOAD
-from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, InlineQueryResultArticle, InputTextMessageContent
+from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
-import requests
-import json
-import zlib
-import base64
-from urllib.parse import urlparse, urljoin, urlunparse
-import base58
-from Crypto import Random, Hash, Protocol
-from Crypto.Cipher import AES
-from math import ceil
+
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
