@@ -77,7 +77,7 @@ PM_START_TEXT = """
 ────「 Tezza Robot 」────
 *Hᴇʟʟᴏ ɪ'ᴍ ᴛᴇᴢᴢᴀ*   
 ✪ I'ᴍ ᴘᴏᴡᴇʀғᴜʟ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ [🔥](https://telegra.ph/file/a8cc05eb6490cf23a57aa.jpg)
-✪ *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
+✪ I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
 ─────────────────────
 I have lots of handy features such as:
 ‣ Warning system
@@ -93,27 +93,27 @@ I have lots of handy features such as:
 buttons = [
     [
         InlineKeyboardButton(
-            text="ADD ME", url="t.me/Tezza_Robot?startgroup=true"),
+            text="Aᴅᴅ Mᴇ", url="t.me/Tezza_Robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ABOUT", callback_data="Masha_"),
-        InlineKeyboardButton(text="COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="Masha_"),
+        InlineKeyboardButton(text="Cᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💾 DEV", callback_data="source_"),
+            text="💾 Dᴇᴠ", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/tezzasupportgroup"
+            text="👥 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/tezzasupportgroup"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』*"""
+*『ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʜᴇʀᴇ』*"""
 
 
-DONATE_STRING = """No need.. I'm rich"""
+DONATE_STRING = """ɴᴏ ɴᴇᴇᴅ.. ɪ'ᴍ ʀɪᴄʜ"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -366,13 +366,13 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Tezza's licensed under the GNU General Public License v3.0_
                  Here is the [SUPPORT](https://t.me/tezzasupportgroup).
-                 If you have any question about Zaira, let us know at @tezzasupprtgroup.""",
+                 If you have any question about zaira, let us know at @tezzasupprtgroup.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_back")
                  ]
                 ]
             ),
@@ -399,7 +399,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back")
                  ]
                 ]
             ),
@@ -465,7 +465,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
             ),
         )
 
@@ -688,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😌")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ʏᴇs ɪ'ᴍ ᴀʟɪᴠᴇ 😌")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
